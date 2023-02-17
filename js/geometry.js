@@ -24,6 +24,12 @@ function rectangleParallelogram(firstValue,secondValue){
    const theArea=FirstValue*SecondValue;
    console.log(theArea.toFixed(2));
 }
+function ellipse(firstValue,secondValue){
+    const FirstValue=getInputFromTextField(firstValue);
+    const SecondValue=getInputFromTextField(secondValue);
+   const theArea=3.1416*FirstValue*SecondValue;
+   console.log(theArea.toFixed(2));
+}
 
 
 document.getElementById('triangle-btn').addEventListener('click',function(){
@@ -31,17 +37,17 @@ document.getElementById('triangle-btn').addEventListener('click',function(){
     
 })
 document.getElementById('rectangle-btn').addEventListener('click',function(){
-    rectangleParallelogram();
+    rectangleParallelogram('w-value','l-value');
 })
 document.getElementById('parallelogram-btn').addEventListener('click',function(){
-    console.log('triangle');
+   rectangleParallelogram('b-parallelogram','h-parallelogram');
 })
 document.getElementById('rhombus-btn').addEventListener('click',function(){
     triangleRhombusPentagon('d1-Value','d2-Value');
 })
 document.getElementById('pentagon-btn').addEventListener('click',function(){
-   triangleRhombusPentagon('b-value','h-value');
+   triangleRhombusPentagon('b-pentagon','h-pentagon');
 })
 document.getElementById('ellipse-btn').addEventListener('click',function(){
-    console.log('triangle');
+    ellipse('a-ellipse','b-ellipse');
 })
