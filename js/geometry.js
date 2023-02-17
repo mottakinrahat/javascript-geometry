@@ -15,25 +15,42 @@ function setTheTextValue(id,value){
 function triangleRhombusPentagon(firstValue,secondValue){
     const FirstValue=getInputFromTextField(firstValue);
     const SecondValue=getInputFromTextField(secondValue);
-   const theArea=0.5*FirstValue*SecondValue;
-   console.log(theArea.toFixed(2));
+   const theThreeAreaAnswer=0.5*FirstValue*SecondValue;
+//    console.log(theArea.toFixed(2));
+return parseFloat(theThreeAreaAnswer) ;
 }
 function rectangleParallelogram(firstValue,secondValue){
     const FirstValue=getInputFromTextField(firstValue);
     const SecondValue=getInputFromTextField(secondValue);
-   const theArea=FirstValue*SecondValue;
-   console.log(theArea.toFixed(2));
+   const theTwoArea=FirstValue*SecondValue;
+   return parseFloat(theTwoArea);
+//    console.log(theArea.toFixed(2));
 }
 function ellipse(firstValue,secondValue){
     const FirstValue=getInputFromTextField(firstValue);
     const SecondValue=getInputFromTextField(secondValue);
    const theArea=3.1416*FirstValue*SecondValue;
-   console.log(theArea.toFixed(2));
+   return parent(theArea) ;
+//    console.log(theArea.toFixed(2));
 }
 
-
+let count=0;
 document.getElementById('triangle-btn').addEventListener('click',function(){
-    triangleRhombusPentagon('b-triangle','h-triangle');
+   const triangleArea= triangleRhombusPentagon('b-triangle','h-triangle');
+    console.log(triangleArea);
+   parent=document.getElementById('content-container');
+   const tr=document.createElement('tr');
+   count+=1;
+   tr.innerHTML=`
+        
+   <td>${count}.Triangle &nbsp &nbsp &nbsp &nbsp;</td>
+   <td>${(triangleArea)}cm<sup>2</sup>&nbsp &nbsp &nbsp &nbsp;</td>
+   <td>
+     
+      <button class="px-2 py-1 bg-blue-600 rounded-xl text-white font-semibold">convert to m<sup>2</sup></button>
+ </td>
+   `;
+   parent.appendChild(tr);
     
 })
 document.getElementById('rectangle-btn').addEventListener('click',function(){
