@@ -17,7 +17,7 @@
             <h1 class="text-4xl font-semibold">Interactive</h1>
             <h2>Geometry Genius</h2>
           </div>
-          <button class="w-[120px] h-[48px] bg-blue-600 text-white font-semibold rounded-xl">Blog</button>
+          <button id="blog-html" class="w-[120px] h-[48px] bg-blue-600 text-white font-semibold rounded-xl">Blog</button>
     </div>
   </header>
  
@@ -25,12 +25,12 @@
   <!-- main part -->
   <main>
     <Section class="p-5">
-    <div class="flex justify-between">
+    <div class=" flex-rows md:flex justify-between">
 
         <!-- input section -->
         <div>
-            <div class="grid grid-cols-3  gap-1">
-                <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+                <div id="triangleHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-8" src="images/triangle.png" alt="" >
                         <h1 id="triangle-title"class="text-2xl font-semibold" >Triangle</h1>
@@ -38,7 +38,7 @@
                         <input id="b-triangle" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-triangle" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="triangle-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+                <div id="rectangleHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-10" src="images/rectangle.png" alt="" >
                         <h1 id="rectangle-title" class="text-2xl font-semibold" >Rectangle</h1>
@@ -46,7 +46,7 @@
                         <input id="w-value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="w"> cm <input  id="l-value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="l"> cm  
                         <button id="rectangle-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+                <div id="parallelogramHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-14" src="images/parallelogram.png" alt="" >
                         <h1 id="parallelogram-title" class="text-2xl font-semibold" >parallelogram</h1>
@@ -54,7 +54,7 @@
                         <input id="b-parallelogram" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-parallelogram" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="parallelogram-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+                <div id="rhombusHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-10" src="images/rhombus.png" alt="" >
                         <h1 id="rhombus-title" class="text-2xl font-semibold" >Rhombus</h1>
@@ -62,7 +62,7 @@
                         <input id="d1-Value"class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="d1"> cm <input id="d2-Value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="d2"> cm  
                         <button id="rhombus-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+                <div id="pentagonHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-11" src="images/pentagon.png" alt="" >
                         <h1 id="pentagon-title" class="text-2xl font-semibold" >Pentagon</h1>
@@ -70,7 +70,7 @@
                         <input id="b-pentagon" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-pentagon" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="pentagon-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+                <div id="ellipseHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-14" src="images/ellipse.png" alt="" >
                         <h1 id="ellipse-title" class="text-2xl font-semibold" >ellipse</h1>
