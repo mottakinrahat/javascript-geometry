@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <title>Assignment-5</title>
 </head>
@@ -31,7 +33,7 @@
                 <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-8" src="images/triangle.png" alt="" >
-                        <h1 class="text-2xl font-semibold" >Triangle</h1>
+                        <h1 id="triangle-title"class="text-2xl font-semibold" >Triangle</h1>
                         <h1>Area(A)=0.5 × b × h</h1>
                         <input id="b-triangle" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-triangle" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="triangle-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
@@ -39,7 +41,7 @@
                 <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-10" src="images/rectangle.png" alt="" >
-                        <h1 class="text-2xl font-semibold" >Rectangle</h1>
+                        <h1 id="rectangle-title" class="text-2xl font-semibold" >Rectangle</h1>
                         <h1>Area(A)= w × l</h1>
                         <input id="w-value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="w"> cm <input  id="l-value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="l"> cm  
                         <button id="rectangle-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
@@ -47,7 +49,7 @@
                 <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-14" src="images/parallelogram.png" alt="" >
-                        <h1 class="text-2xl font-semibold" >parallelogram</h1>
+                        <h1 id="parallelogram-title" class="text-2xl font-semibold" >parallelogram</h1>
                         <h1>Area(A)= b × h</h1>
                         <input id="b-parallelogram" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-parallelogram" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="parallelogram-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
@@ -55,7 +57,7 @@
                 <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-10" src="images/rhombus.png" alt="" >
-                        <h1 class="text-2xl font-semibold" >Rhombus</h1>
+                        <h1 id="rhombus-title" class="text-2xl font-semibold" >Rhombus</h1>
                         <h1>Area(A)=0.5 × d1 × d2</h1>
                         <input id="d1-Value"class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="d1"> cm <input id="d2-Value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="d2"> cm  
                         <button id="rhombus-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
@@ -63,7 +65,7 @@
                 <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-11" src="images/pentagon.png" alt="" >
-                        <h1 class="text-2xl font-semibold" >Pentagon</h1>
+                        <h1 id="pentagon-title" class="text-2xl font-semibold" >Pentagon</h1>
                         <h1>Area(A)=0.5 × b × h</h1>
                         <input id="b-pentagon" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-pentagon" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="pentagon-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
@@ -71,7 +73,7 @@
                 <div class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-14" src="images/ellipse.png" alt="" >
-                        <h1 class="text-2xl font-semibold" >ellipse</h1>
+                        <h1 id="ellipse-title" class="text-2xl font-semibold" >ellipse</h1>
                         <h1>Area(A)= πab</h1>
                         <input id="a-ellipse" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="a"> cm <input id="b-ellipse" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="b"> cm  
                         <button id="ellipse-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
@@ -79,22 +81,23 @@
             </div>
         </div>
                 <div>
-                    <div id="content-container" class="border border-dark-800 w-[370px] h-[454px] rounded-xl py-3 p-2 text-center">
+                    <div id="content-container" class="border border-dark-800 w-[370px] h-full rounded-xl py-3 p-2 text-center">
                     
                         <h1 class="text-2xl font-semibold underline" >Area Calculation</h1>
-                        <table class="table-auto">
-                            <thead>
-                              <tr>
-                                <th>geometryName</th>
-                                <th>area </th>
-                                <th>button</th>
-                              </tr>
-                            </thead>
-                            <tbody id="content-container">
-                           
-                             
-                            </tbody>
+                      
                           </table>
+                          <div class="overflow-x-auto">
+                                <table class="table w-full">
+                                  <!-- head -->
+                                  <thead>
+                                   
+                                  </thead>
+                                  <tbody id="content-container">
+                                
+                                  </tbody>
+                                  
+                                </table>
+                              </div>
                         </div>
                 </div>
                 
