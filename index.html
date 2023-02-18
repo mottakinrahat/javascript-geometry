@@ -7,6 +7,12 @@
 <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <title>Assignment-5</title>
+  <style>
+        tr{
+                gap:20px;
+        }
+        
+  </style>
 </head>
 <body>
 
@@ -29,8 +35,11 @@
 
         <!-- input section -->
         <div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
-                <div id="triangleHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 w-70">
+
+                <!-- Triangle Card -->
+
+                <div id="triangleHover" class="border border-dark-800 w-auto rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-8" src="images/triangle.png" alt="" >
                         <h1 id="triangle-title"class="text-2xl font-semibold" >Triangle</h1>
@@ -38,7 +47,9 @@
                         <input id="b-triangle" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-triangle" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="triangle-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div id="rectangleHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+
+                <!-- rectangle Card -->
+                <div id="rectangleHover" class="border border-dark-800 w-auto rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-10" src="images/rectangle.png" alt="" >
                         <h1 id="rectangle-title" class="text-2xl font-semibold" >Rectangle</h1>
@@ -46,7 +57,10 @@
                         <input id="w-value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="w"> cm <input  id="l-value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="l"> cm  
                         <button id="rectangle-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div id="parallelogramHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+
+
+                <!-- parallelogram card -->
+                <div id="parallelogramHover" class="border border-dark-800 w-auto rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-14" src="images/parallelogram.png" alt="" >
                         <h1 id="parallelogram-title" class="text-2xl font-semibold" >parallelogram</h1>
@@ -54,7 +68,9 @@
                         <input id="b-parallelogram" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-parallelogram" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="parallelogram-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div id="rhombusHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+
+                <!-- rhombus Card -->
+                <div id="rhombusHover" class="border border-dark-800 w-auto rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-10" src="images/rhombus.png" alt="" >
                         <h1 id="rhombus-title" class="text-2xl font-semibold" >Rhombus</h1>
@@ -62,15 +78,19 @@
                         <input id="d1-Value"class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="d1"> cm <input id="d2-Value" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="d2"> cm  
                         <button id="rhombus-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div id="pentagonHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+
+                <!-- pentagon Card -->
+                <div id="pentagonHover" class="border border-dark-800 w-auto rounded-xl py-3 px-2 text-center">
                     
-                        <img class="p-11" src="images/pentagon.png" alt="" >
+                        <img class="p-10" src="images/pentagon.png" alt="" >
                         <h1 id="pentagon-title" class="text-2xl font-semibold" >Pentagon</h1>
                         <h1>Area(A)=0.5 × b × h</h1>
                         <input id="b-pentagon" class="w-[95px] h-[32px] rounded bg-slate-200" type="text" placeholder="b"> cm <input id="h-pentagon" class="w-[95px] h-[32px] rounded bg-slate-200" type="text"  placeholder="h"> cm  
                         <button id="pentagon-btn" class="px-[128px] py-[16px] bg-blue-600 text-white font-semibold text-xl rounded-xl block mt-4">Calculate</button>
                 </div>
-                <div id="ellipseHover" class="border border-dark-800 w-[370px] rounded-xl py-3 px-2 text-center">
+
+                <!-- ellipse Card -->
+                <div id="ellipseHover" class="border border-dark-800 w-auto rounded-xl py-3 px-2 text-center">
                     
                         <img class="p-14" src="images/ellipse.png" alt="" >
                         <h1 id="ellipse-title" class="text-2xl font-semibold" >ellipse</h1>
@@ -81,7 +101,11 @@
             </div>
         </div>
                 <div>
-                    <div id="content-container" class="border border-dark-800 w-[370px] h-full rounded-xl py-3 p-2 text-center">
+
+                        <!-- Calculation OutPut area -->
+
+
+                    <div id="content-container" class="border border-dark-800 w-[370px] h-full rounded-xl p-2  text-center ml-3">
                     
                         <h1 class="text-2xl font-semibold underline" >Area Calculation</h1>
                       
@@ -103,16 +127,15 @@
                 
               
         </div>
-
-
-        <!-- OutPut Section -->
-
         <div>
 
         </div>
     </div>
 </Section>
  </main>
+
+ <!-- connect with JS file -->
+ 
  <script src="js/geometry.js"></script>
 </body>
 </html>

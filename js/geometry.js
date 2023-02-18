@@ -30,8 +30,8 @@ function setTheTextValue(id,value){
 function triangleRhombusPentagon(firstValue,secondValue){
     const FirstValue=getInputFromTextField(firstValue);
     const SecondValue=getInputFromTextField(secondValue);
-    if(isNaN(FirstValue)|| FirstValue<0 ||isNaN(SecondValue) || FirstValue<0){
-        alert('Please add valid input:1.Add a positive number as input 2. Do not keep null any input field');
+    if(isNaN(FirstValue)|| FirstValue<0 ||isNaN(SecondValue) || SecondValue<0){
+        alert('Please add valid input: 1.Add a positive number as input. 2. Do not keep null any input field. 3.Do not add string as input.');
        
     }
     else{
@@ -47,8 +47,8 @@ return parseFloat(theThreeAreaAnswer.toFixed(2)) ;
 function rectangleParallelogram(firstValue,secondValue){
     const FirstValue=getInputFromTextField(firstValue);
     const SecondValue=getInputFromTextField(secondValue);
-    if(isNaN(FirstValue)|| FirstValue<0 ||isNaN(SecondValue) || FirstValue<0){
-        alert('Please add valid input:1.Add a positive number as input 2. Do not keep null any input field');
+    if(isNaN(FirstValue)|| FirstValue<0 ||isNaN(SecondValue) ||SecondValue<0){
+        alert('Please add valid input:1.Add a positive number as input 2. Do not keep null any input field. 3.Do not add string as input.');
        
     }
     else{
@@ -63,8 +63,8 @@ function rectangleParallelogram(firstValue,secondValue){
 function ellipse(firstValue,secondValue){
     const FirstValue=getInputFromTextField(firstValue);
     const SecondValue=getInputFromTextField(secondValue);
-    if(isNaN(FirstValue)|| FirstValue<0 ||isNaN(SecondValue) || FirstValue<0){
-        alert('Please add valid input:1.Add a positive number as input 2. Do not keep null any input field');
+    if(isNaN(FirstValue)|| FirstValue<0 ||isNaN(SecondValue) || SecondValue<0){
+        alert('Please add valid input:1.Add a positive number as input 2. Do not keep null any input field. 3.Do not add string as input.');
        
     }
     else{
